@@ -1,0 +1,57 @@
+<html>
+    <head>
+<title>Math Quiz Game</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
+<link rel="stylesheet" type="text/css" href="math_quiz_game_page.css">
+    </head>
+<body>
+
+<h4 style="color: black;" id="player1_name"></h4> <span style="color: black; display: inline-block; margin-left: 20px; background-color: yellow;border-radius: 5px; width: 20px; height: 20px; text-align: center;" id="player1_score"></span>
+<br>
+<h4 style="color: black;" id="player2_name"></h4> <span style="color: black; display: inline-block; margin-left: 20px; background-color: yellow;border-radius: 5px; width: 20px; height: 20px; text-align: center;" id="player2_score"></span>
+
+<div class="container">
+<center>
+<h1>The Math Quiz Game</h2>
+
+<h3 style="color: #48e8e0;"id="player_question"></h3> 
+
+<h3 style="color: #48e8e0;" id="player_answer"></h3>
+
+<div id="output" class="col-lg-6">
+</div>
+<br>
+<br>
+<label>Enter any 2 numbers: <b style="color: red">The questioner should enter the numbers down below and should submit it
+</b>
+</label>
+<br>
+<br>
+
+<h2>First value</h2>
+
+<br>
+
+<input type="text"  id="text_input_first_value"class="form-control" placeholder="Number">
+
+<br>
+<br>
+<br>
+
+<h2>Second value</h2>
+
+<br>
+
+<input type="text"  id="text_input_second_value"class="form-control" placeholder="Number">
+<br>
+<button onclick="send()" class="btn btn-success" style="width: 30%;">Send</button>
+</center>
+</div>
+
+<script src="math_quiz_game_page.js"></script>
+</body>
+</html>
